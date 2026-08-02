@@ -18,7 +18,7 @@ export default function About() {
             <div className="absolute -inset-2 rounded-3xl bg-yellow-500 blur-xl opacity-20"></div>
 
             <Image
-              src="/images/profile.png"
+              src="/images/ahmad-tanali.png"
               alt="Ahmad Tanali, SH"
               width={420}
               height={520}

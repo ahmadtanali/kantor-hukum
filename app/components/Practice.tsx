@@ -1,27 +1,27 @@
+"use client";
+
+import Image from "next/image";
+
 const services = [
   {
-    icon: "⚖️",
-    title: "Hukum Perdata",
-    description:
-      "Penyelesaian sengketa wanprestasi, perbuatan melawan hukum, sengketa tanah, waris, dan perkara perdata lainnya.",
+    title: "HUKUM PERDATA",
+    image: "/images/services/perdata.png",
+    desc: "Pendampingan dan penyelesaian sengketa perdata, wanprestasi, perbuatan melawan hukum, perjanjian serta berbagai perkara keperdataan lainnya.",
   },
   {
-    icon: "👮",
-    title: "Hukum Pidana",
-    description:
-      "Pendampingan pada tahap penyelidikan, penyidikan, persidangan, hingga upaya hukum lanjutan.",
+    title: "HUKUM PIDANA",
+    image: "/images/services/pidana.png",
+    desc: "Pendampingan hukum pada setiap tahapan proses pidana secara profesional guna melindungi hak dan kepentingan klien.",
   },
   {
-    icon: "🏛️",
-    title: "Hukum Perusahaan",
-    description:
-      "Pendirian perusahaan, kontrak bisnis, legal opinion, serta konsultasi hukum korporasi.",
+    title: "HUKUM PERUSAHAAN",
+    image: "/images/services/perusahaan.png",
+    desc: "Pendampingan hukum perusahaan meliputi legal opinion, kontrak bisnis, kepatuhan hukum serta penyelesaian sengketa korporasi.",
   },
   {
-    icon: "⛏️",
-    title: "Pertanahan & Pertambangan",
-    description:
-      "Pendampingan sengketa pertanahan, perizinan, IUP, dan penyelesaian konflik pertambangan.",
+    title: "PERTANAHAN & PERTAMBANGAN",
+    image: "/images/services/pertambangan.png",
+    desc: "Pelayanan hukum di bidang pertanahan, sertifikasi, sengketa lahan, perizinan, pertambangan dan sumber daya alam.",
   },
 ];
 
@@ -29,47 +29,121 @@ export default function Practice() {
   return (
     <section
       id="layanan"
-      className="bg-black text-white py-24"
+      className="bg-[#090909] py-28"
     >
       <div className="max-w-7xl mx-auto px-8">
 
-        <div
-          className="text-center mb-16"
-          data-aos="fade-up"
-        >
-          <p className="uppercase tracking-[0.35em] text-yellow-400 mb-3">
-            Bidang Praktik
+        <div className="text-center mb-20">
+
+          <p className="text-yellow-400 uppercase tracking-[0.45em] text-sm">
+            LAYANAN HUKUM
           </p>
 
-          <h2 className="text-5xl font-bold">
-            Layanan Hukum Kami
+          <h2 className="font-cinzel text-5xl text-white mt-4">
+            BIDANG PRAKTIK KAMI
           </h2>
 
-          <div className="w-24 h-1 bg-yellow-500 mx-auto mt-6 rounded-full"></div>
+          <div className="w-24 h-1 bg-yellow-500 rounded-full mx-auto mt-8 mb-8"></div>
+
+          <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-8">
+            Kami memberikan pelayanan hukum profesional,
+            strategis, dan berorientasi pada penyelesaian
+            terbaik demi melindungi kepentingan setiap klien.
+          </p>
+
         </div>
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
 
           {services.map((service, index) => (
 
             <div
-              key={service.title}
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
-              className="group bg-zinc-900 border border-zinc-800 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 hover:border-yellow-500 hover:shadow-[0_0_35px_rgba(234,179,8,0.25)]"
+              key={index}
+              className="
+              group
+              bg-[#121212]
+              rounded-3xl
+              overflow-hidden
+              border
+              border-yellow-500/20
+              transition-all
+              duration-500
+              hover:-translate-y-4
+              hover:border-yellow-400
+              hover:shadow-[0_0_45px_rgba(234,179,8,.30)]
+              "
             >
 
-              <div className="text-5xl mb-6 transition-transform duration-300 group-hover:scale-110">
-                {service.icon}
+              <div className="relative h-80 overflow-hidden">
+
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={600}
+                  height={420}
+                  className="
+                  w-full
+                  h-full
+                  object-cover
+                  transition-all
+                  duration-700
+                  group-hover:scale-110
+                  "
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+
               </div>
 
-              <h3 className="text-2xl font-bold mb-4 group-hover:text-yellow-400 transition-colors duration-300">
-                {service.title}
-              </h3>
+              <div className="p-8">
+                                <h3
+                  className="
+                  font-cinzel
+                  text-2xl
+                  text-white
+                  leading-snug
+                  transition-all
+                  duration-300
+                  group-hover:text-yellow-400
+                  "
+                >
+                  {service.title}
+                </h3>
 
-              <p className="text-gray-400 leading-8">
-                {service.description}
-              </p>
+                <div
+                  className="
+                  w-16
+                  h-1
+                  bg-yellow-500
+                  rounded-full
+                  my-5
+                  transition-all
+                  duration-500
+                  group-hover:w-28
+                  "
+                ></div>
+
+                <p className="text-gray-400 leading-8 text-[15px]">
+                  {service.desc}
+                </p>
+
+                <button
+                  className="
+                  mt-8
+                  text-yellow-400
+                  font-bold
+                  uppercase
+                  tracking-[0.20em]
+                  transition-all
+                  duration-300
+                  group-hover:translate-x-3
+                  group-hover:text-yellow-300
+                  "
+                >
+                  KONSULTASI →
+                </button>
+
+              </div>
 
             </div>
 

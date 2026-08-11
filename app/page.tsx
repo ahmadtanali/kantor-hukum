@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar";
+import ProfessionalActivity from "./components/ProfessionalActivity";
 import HeroNew from "./components/HeroNew";
 import About from "./components/About";
 import Practice from "./components/Practice";
@@ -14,6 +15,9 @@ export default function Home() {
       <HeroNew />
       <About />
       <Practice />
+      <Practice />
+<ProfessionalActivity />
+<WhyUs />
       <WhyUs />
       <Contact />
       <Footer />

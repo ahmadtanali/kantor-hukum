@@ -82,10 +82,10 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/artikel"
+              href="/atr-news"
               className="hover:text-yellow-400 transition"
             >
-              Artikel
+              ATR NEWS
             </Link>
 
             <Link
@@ -142,11 +142,11 @@ export default function Navbar() {
               </Link>
 
               <Link
-                href="/artikel"
+                href="/atr-news"
                 onClick={closeMenu}
                 className="text-white py-3 px-3 rounded-lg hover:bg-white/5 hover:text-yellow-400 transition"
               >
-                Artikel
+                ATR NEWS
               </Link>
 
               <Link

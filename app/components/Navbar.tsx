@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-4 md:py-5">
         <div className="flex items-center justify-between">
-          
+
           {/* LOGO */}
           <Link
             href="/"
@@ -60,6 +60,7 @@ export default function Navbar() {
 
           {/* MENU DESKTOP */}
           <div className="hidden md:flex items-center gap-10 text-white font-medium">
+
             <Link
               href="/"
               className="hover:text-yellow-400 transition"
@@ -81,6 +82,14 @@ export default function Navbar() {
               Praktik
             </Link>
 
+            {/* ARTIKEL */}
+            <Link
+              href="/artikel"
+              className="hover:text-yellow-400 transition"
+            >
+              Artikel
+            </Link>
+
             <Link
               href="/atr-news"
               className="hover:text-yellow-400 transition"
@@ -94,6 +103,7 @@ export default function Navbar() {
             >
               Kontak
             </Link>
+
           </div>
 
           {/* TOMBOL MENU HP */}
@@ -116,7 +126,7 @@ export default function Navbar() {
         {menuOpen && (
           <div className="md:hidden mt-4 border-t border-white/10 pt-4 pb-2">
             <div className="flex flex-col">
-              
+
               <Link
                 href="/"
                 onClick={closeMenu}
@@ -139,6 +149,15 @@ export default function Navbar() {
                 className="text-white py-3 px-3 rounded-lg hover:bg-white/5 hover:text-yellow-400 transition"
               >
                 Praktik
+              </Link>
+
+              {/* ARTIKEL MOBILE */}
+              <Link
+                href="/artikel"
+                onClick={closeMenu}
+                className="text-white py-3 px-3 rounded-lg hover:bg-white/5 hover:text-yellow-400 transition"
+              >
+                Artikel
               </Link>
 
               <Link

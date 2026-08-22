@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -34,23 +33,23 @@ export default function Artikel() {
     <>
       <Navbar />
 
-      <main className="bg-[#090909] min-h-screen pt-32 pb-24">
+      <main className="bg-[#F7F5F0] min-h-screen pt-32 pb-24">
         <section className="max-w-5xl mx-auto px-8">
 
           {/* HEADER */}
           <header className="mb-16">
 
-            <p className="text-yellow-400 uppercase tracking-[0.35em] text-sm mb-4">
+            <p className="text-[#9A7628] uppercase tracking-[0.35em] text-sm mb-4">
               Artikel Hukum
             </p>
 
-            <h1 className="font-cinzel text-4xl md:text-5xl text-white">
+            <h1 className="font-cinzel text-4xl md:text-5xl text-[#17233C]">
               Wawasan Hukum
             </h1>
 
-            <div className="w-20 h-1 bg-yellow-500 rounded-full mt-6" />
+            <div className="w-20 h-1 bg-[#B08D3C] rounded-full mt-6" />
 
-            <p className="text-gray-500 text-lg leading-8 max-w-3xl mt-8">
+            <p className="text-[#4B5563] text-lg leading-8 max-w-3xl mt-8">
               Informasi dan wawasan hukum untuk membantu Anda memahami
               persoalan hukum sebelum menentukan langkah yang tepat.
             </p>
@@ -58,7 +57,7 @@ export default function Artikel() {
           </header>
 
           {/* DAFTAR ARTIKEL */}
-          <div className="border-t border-white/10">
+          <div className="border-t border-[#17233C]/10">
 
             {articles.map((article) => (
               <article
@@ -66,10 +65,10 @@ export default function Artikel() {
                 className="
                   py-9
                   border-b
-                  border-white/10
+                  border-[#17233C]/10
                   transition-all
                   duration-300
-                  hover:bg-white/[0.02]
+                  hover:bg-white/60
                 "
               >
 
@@ -77,19 +76,19 @@ export default function Artikel() {
 
                   <div className="max-w-3xl">
 
-                    <p className="text-yellow-400 text-xs uppercase tracking-[0.25em] mb-3">
+                    <p className="text-[#9A7628] text-sm uppercase tracking-[0.25em] mb-3">
                       {article.category}
                     </p>
 
-                    <h2 className="text-white text-xl md:text-2xl font-semibold leading-snug">
+                    <h2 className="text-[#17233C] text-2xl md:text-3xl font-semibold">
                       {article.title}
                     </h2>
 
-                    <p className="text-gray-500 text-sm leading-7 mt-4 max-w-2xl">
+                    <p className="text-[#4B5563] text-base leading-8 mt-4 max-w-2xl">
                       {article.description}
                     </p>
 
-                    <p className="text-gray-600 text-sm mt-4">
+                    <p className="text-[#6B7280] text-base mt-4">
                       Ahmad Tanali, S.H. · {article.date}
                     </p>
 
@@ -104,16 +103,16 @@ export default function Artikel() {
                       px-6
                       py-3
                       border
-                      border-yellow-500/40
+                      border-[#B08D3C]/60
                       rounded-full
-                      text-yellow-400
+                      text-[#9A7628]
                       text-sm
                       font-semibold
                       uppercase
                       tracking-[0.18em]
-                      hover:bg-yellow-500
-                      hover:text-black
-                      hover:border-yellow-500
+                      hover:bg-[#B08D3C]
+                      hover:text-white
+                      hover:border-[#B08D3C]
                       transition-all
                       duration-300
                       whitespace-nowrap
@@ -130,19 +129,19 @@ export default function Artikel() {
           </div>
 
           {/* CTA */}
-          <section className="mt-20 pt-10 border-t border-yellow-500/10">
+          <section className="mt-20 pt-10 border-t border-[#17233C]/10">
 
             <div className="text-center max-w-2xl mx-auto">
 
-              <p className="text-gray-500 text-sm uppercase tracking-[0.25em]">
+              <p className="text-[#9A7628] text-sm uppercase tracking-[0.25em]">
                 Membutuhkan Pendampingan?
               </p>
 
-              <h2 className="font-cinzel text-2xl md:text-3xl text-white mt-4">
+              <h2 className="font-cinzel text-2xl md:text-3xl text-[#17233C] mt-4">
                 Persoalan Hukum Anda Berbeda
               </h2>
 
-              <p className="text-gray-500 leading-8 mt-5">
+              <p className="text-[#4B5563] leading-8 mt-5">
                 Informasi dalam artikel bersifat umum. Untuk menentukan
                 langkah hukum yang tepat, diperlukan pemahaman terhadap
                 fakta dan dokumen dalam setiap perkara.
@@ -156,15 +155,15 @@ export default function Artikel() {
                   px-8
                   py-4
                   rounded-full
-                  bg-yellow-500
-                  text-black
+                  bg-[#B08D3C]
+                  text-white
                   font-bold
                   uppercase
                   tracking-[0.18em]
                   text-sm
                   transition-all
                   duration-300
-                  hover:bg-yellow-400
+                  hover:bg-[#9A7628]
                   hover:-translate-y-1
                 "
               >
@@ -179,6 +178,7 @@ export default function Artikel() {
       </main>
 
       <Footer />
+
       <FloatingWhatsApp />
     </>
   );

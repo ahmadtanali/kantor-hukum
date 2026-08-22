@@ -10,38 +10,40 @@ export default function HeroNew() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/hero-bg.png')",
-        }}
-      />
+<div
+  className="absolute inset-0 bg-[#F7F5F0]"
+/>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+{/* Background Image */}
+<div
+  className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+  style={{
+    backgroundImage: "url('/images/hero-bg.png')",
+  }}
+/>
 
       {/* Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
 
-        <span className="inline-block border border-yellow-500 text-yellow-400 px-5 py-2 rounded-full tracking-[0.3em] uppercase text-xs mb-8">
+        <span className="inline-block border border-[#B08D3C] text-[#9A7628] px-5 py-2 rounded-full tracking-[0.3em] uppercase text-xs mb-8">
           Advocates &amp; Legal Consultants
         </span>
 
         <h1 className="font-cinzel text-5xl md:text-7xl font-bold leading-tight">
-          <span className="text-yellow-400">
-            AHMAD TANALI
-          </span>
+          <span className="text-[#17233C]">
+  AHMAD TANALI
+</span>
 
           <br />
 
-          <span className="text-white">
-            &amp; REKAN
-          </span>
+          <span className="text-[#17233C]">
+  &amp; REKAN
+</span>
         </h1>
 
         <div className="w-32 h-1 bg-yellow-500 mx-auto my-8 rounded-full" />
 
-        <p className="text-xl text-gray-300 leading-8 max-w-3xl mx-auto">
+        <p className="text-xl text-[#374151] leading-8 max-w-3xl mx-auto">
           Strategi hukum yang tepat,
           integritas yang tinggi,
           serta pendampingan profesional

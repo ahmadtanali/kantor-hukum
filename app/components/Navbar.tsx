@@ -23,13 +23,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled || menuOpen
-          ? "bg-black/95 backdrop-blur-md shadow-lg"
-          : "bg-black/70 backdrop-blur-sm"
-      }`}
-    >
+   <nav
+  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+    scrolled || menuOpen
+      ? "bg-[#17233C]/98 backdrop-blur-md shadow-lg"
+      : "bg-[#17233C]/95 backdrop-blur-sm"
+  }`}
+>
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-4 md:py-5">
         <div className="flex items-center justify-between">
 
@@ -59,7 +59,7 @@ export default function Navbar() {
           </Link>
 
           {/* MENU DESKTOP */}
-          <div className="hidden md:flex items-center gap-10 text-white font-medium">
+          <div className="hidden md:flex items-center gap-10 text-white font-medium uppercase tracking-[0.12em]">
 
             <Link
               href="/"
@@ -125,8 +125,7 @@ export default function Navbar() {
         {/* MENU MOBILE */}
         {menuOpen && (
           <div className="md:hidden mt-4 border-t border-white/10 pt-4 pb-2">
-            <div className="flex flex-col">
-
+            <div className="flex flex-col uppercase tracking-[0.12em]">
               <Link
                 href="/"
                 onClick={closeMenu}

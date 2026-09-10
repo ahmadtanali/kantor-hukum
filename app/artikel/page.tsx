@@ -1,6 +1,9 @@
 import Link from "next/link";
+
 import Navbar from "../components/Navbar";
+
 import Footer from "../components/Footer";
+
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 
 export const metadata = {
@@ -11,14 +14,26 @@ export const metadata = {
 
 const articles = [
   {
+    category: "HUKUM PERDATA",
+    title: "Putusan Pidana yang Telah Inkracht sebagai Novum dalam PK Perdata",
+    description:
+      "Apakah putusan pidana yang telah berkekuatan hukum tetap dapat menjadi bukti baru dalam Peninjauan Kembali perkara perdata? Simak kedudukan, syarat, dan relevansinya.",
+    author: "Ahmad Tanali, S.H.",
+    date: "10 September 2026",
+    href: "/artikel/putusan-pidana-inkracht-sebagai-novum-perkara-perdata",
+  },
+
+  {
     category: "HUKUM PIDANA",
-    title: "Dari Putusan Menuju Pelaksanaan: Menakar Kesiapan Ekosistem Pidana Pengawasan dan Pidana Kerja Sosial dalam KUHP Nasional",
+    title:
+      "Dari Putusan Menuju Pelaksanaan: Menakar Kesiapan Ekosistem Pidana Pengawasan dan Pidana Kerja Sosial dalam KUHP Nasional",
     description:
       "Kajian mengenai perubahan arsitektur pemidanaan setelah berlakunya KUHP Nasional, khususnya pidana pengawasan dan pidana kerja sosial serta kesiapan ekosistem implementasinya.",
     author: "Lollong Manting, S.S., M.M. & Ahmad Tanali, S.H.",
     date: "2026",
     href: "/artikel/dari-putusan-menuju-pelaksanaan",
   },
+
   {
     category: "HUKUM PIDANA",
     title: "Perkara Pidana Bukan Merupakan Perkara Perdata",
@@ -110,6 +125,7 @@ export default function ArtikelPage() {
       </main>
 
       <Footer />
+
       <FloatingWhatsApp />
     </>
   );

@@ -1,9 +1,7 @@
 import Link from "next/link";
 
 import Navbar from "../components/Navbar";
-
 import Footer from "../components/Footer";
-
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
 
 export const metadata = {
@@ -13,6 +11,17 @@ export const metadata = {
 };
 
 const articles = [
+  {
+    category: "HUKUM AKTUAL",
+    title:
+      "BBM Antre, LPG 3 Kg Langka di Sulsel: Siapa yang Bertanggung Jawab dan Apa Hak Masyarakat?",
+    description:
+      "Antrean BBM dan sulitnya memperoleh LPG 3 kilogram di Sulawesi Selatan menjadi perhatian masyarakat. Bagaimana persoalan ini dilihat dari sisi hukum dan apa yang dapat dilakukan masyarakat?",
+    author: "Ahmad Tanali, S.H.",
+    date: "11 September 2026",
+    href: "/artikel/bbm-lpg-3kg-sulsel-hak-masyarakat",
+  },
+
   {
     category: "HUKUM PERDATA",
     title: "Putusan Pidana yang Telah Inkracht sebagai Novum dalam PK Perdata",
